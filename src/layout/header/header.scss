@@ -1,0 +1,65 @@
+@use 'sass:map';
+@import '../../styles/helpers/variables';
+
+$hamburger-icon-size: 30px;
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 8em;
+}
+
+.header__menu-btn {
+  display: none;
+  background-color: #ffffff;
+
+  &:hover {
+    border-color: none;
+  }
+}
+
+.header__menu-btn-icon {
+  width: $hamburger-icon-size;
+  height: $hamburger-icon-size;
+  color: map.get($colors, background-blue);
+  &:focus,
+  &:focus-visible {
+    outline: 1em auto map-get($colors, focus-color);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header__container {
+    padding: 1em 20em;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header__container {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .header__container {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .header__menu-btn {
+    display: block;
+  }
+
+  .header__upper-media {
+    display: none;
+  }
+
+  .header__container {
+    flex-direction: row;
+    padding: 2em 2em 0;
+  }
+}

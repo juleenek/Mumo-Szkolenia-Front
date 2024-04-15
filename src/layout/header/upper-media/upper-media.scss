@@ -1,0 +1,49 @@
+@use 'sass:map';
+@import '../../../styles/helpers/variables';
+@import '../../../styles/helpers/mixins';
+
+$icon-size: 20px;
+
+.upper-media {
+  background-color: map-get($colors, background-blue);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 25px;
+  padding: 0.7em 8em;
+}
+
+.upper-media__icon-link {
+  display: flex;
+  align-items: center;
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto map-get($colors, focus-color)
+  }
+}
+
+.upper-media__icon {
+  color: #ffffff;
+  width: $icon-size;
+  height: $icon-size;
+  &:hover {
+    color: #f1f1f1;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .upper-media {
+    padding: 0.7em 20em;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .upper-media {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 13px 0;
+    justify-content: center;
+    width: 100vw;
+  }
+}
