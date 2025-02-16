@@ -8,7 +8,7 @@ interface Props {
   isSecondNameVisible?: boolean;
 }
 
-const LOGO_SRC = '/Mumo-Szkolenia-Front/src/assets/images/logo-bg-01.png';
+const LOGO_SRC = '../../assets/images/logo-bg-01.png';
 
 const Logotype: FC<Props> = ({
   className,
