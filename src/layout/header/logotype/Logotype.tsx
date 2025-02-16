@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 import './logotype.scss';
+import Logo from '../../assets/images/logo-bg-01.png';
 
 interface Props {
   className?: string;
@@ -8,7 +9,7 @@ interface Props {
   isSecondNameVisible?: boolean;
 }
 
-const LOGO_SRC = '../../assets/images/logo-bg-01.png';
+const LOGO_SRC = Logo;
 
 const Logotype: FC<Props> = ({
   className,
