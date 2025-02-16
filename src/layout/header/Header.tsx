@@ -29,7 +29,6 @@ const Header = () => {
         >
           <FaBars
             className='header__menu-btn-icon'
-            alt='Ikonka do rozwinięcia menu'
           />
         </button>
         <Transition

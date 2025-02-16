@@ -40,8 +40,8 @@ const ClientSection: FC = () => {
           >
             <SwiperSlide>
               <ClientCard
-                name='Dominika i Azorek'
-                content='Lorem ipsum dolor sit amet '
+                name='Marta i Thami'
+                content='Polecam Alex z całego serca! Zawsze mogę na nią liczyć, a radość chłopaków mówi wszystko – wie, jak przytulić i okiełznać uparciucha 😊'
                 pictureURL='src\assets\images\client-dog1.png'
                 pictureAlt="A corgi staring to the front with it's tongue out."
               ></ClientCard>
@@ -64,8 +64,8 @@ const ClientSection: FC = () => {
             </SwiperSlide>
             <SwiperSlide>
               <ClientCard
-                name='Paweł i Ciapek'
-                content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio quis euismod blandit. Vestibulum a luctus metus. '
+                name='Marta i Tijo'
+                content='Z Tijem trafiliśmy do Oli na start. To ona nauczyła go radości z treningu – do dziś widać to w ringu, a o to właśnie chodzi!'
                 pictureURL='src\assets\images\client-dog4.png'
                 pictureAlt='A beagle staring to the front.'
               ></ClientCard>

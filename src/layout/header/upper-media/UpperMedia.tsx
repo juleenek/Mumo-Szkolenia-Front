@@ -22,7 +22,7 @@ const UpperMedia: FC<Props> = ({ className }) => {
         aria-label='Przejdź do Facebooka'
         target='_blank'
       >
-        <FaFacebook className='upper-media__icon' alt='Ikonka Facebooka' />
+        <FaFacebook className='upper-media__icon' />
       </a>
 
       <a
@@ -31,19 +31,16 @@ const UpperMedia: FC<Props> = ({ className }) => {
         aria-label='Przejdź do Instagrama'
         target='_blank'
       >
-        <FaInstagram className='upper-media__icon' alt='Ikonka Instagrama' />
+        <FaInstagram className='upper-media__icon' />
       </a>
 
       <a
         className='upper-media__icon-link'
         href={`tel:+48${infoConstants.PHONE_NUMBER}`}
-        aria-label='Zadzwoń na numer telefoniczny'
+        aria-label='Zadzwoń'
         target='_blank'
       >
-        <FaPhoneAlt
-          className='upper-media__icon'
-          alt='Ikonka słuchawki telefonu'
-        />
+        <FaPhoneAlt className='upper-media__icon' />
       </a>
 
       <a
@@ -52,10 +49,7 @@ const UpperMedia: FC<Props> = ({ className }) => {
         aria-label='Napisz wiadomość mailową'
         target='_blank'
       >
-        <FaEnvelope
-          className='upper-media__icon'
-          alt='Ikonka koperty pocztowej'
-        />
+        <FaEnvelope className='upper-media__icon' />
       </a>
     </div>
   );

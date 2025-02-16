@@ -24,10 +24,9 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
   };
 
   return (
-    <div className={classNames('navbar', className)}>
+    <nav className={classNames('navbar', className)}>
       <div className='navbar__element'>
-        {}
-        <a
+        <button
           className='navbar__element-link'
           onClick={() =>
             isHomePage
@@ -38,13 +37,12 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
                 )
               : onNavbarLinkClick(HomepageSections.Home, toggleMobileNavbar)
           }
-          tabIndex={0}
         >
           Główna
-        </a>
+        </button>
       </div>
       <div className='navbar__element'>
-        <a
+        <button
           className='navbar__element-link'
           onClick={() =>
             isHomePage
@@ -55,13 +53,12 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
                 )
               : onNavbarLinkClick(HomepageSections.About, toggleMobileNavbar)
           }
-          tabIndex={0}
         >
           O nas
-        </a>
+        </button>
       </div>
       <div className='navbar__element'>
-        <a
+        <button
           className='navbar__element-link'
           onClick={() =>
             isHomePage
@@ -72,14 +69,13 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
                 )
               : onNavbarLinkClick(HomepageSections.Offer, toggleMobileNavbar)
           }
-          tabIndex={0}
           id='navbar__anchor'
         >
           Oferta
-        </a>
+        </button>
       </div>
       <div className='navbar__element'>
-        <a
+        <button
           className='navbar__element-link'
           onClick={() =>
             isHomePage
@@ -90,13 +86,12 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
                 )
               : onNavbarLinkClick(HomepageSections.Clients, toggleMobileNavbar)
           }
-          tabIndex={0}
         >
           Nasi Klienci
-        </a>
+        </button>
       </div>
       <div className='navbar__element'>
-        <a
+        <button
           className='navbar__element-link'
           onClick={() =>
             isHomePage
@@ -107,12 +102,11 @@ const Navbar: FC<Props> = ({ className, toggleMobileNavbar }) => {
                 )
               : onNavbarLinkClick(HomepageSections.Contact, toggleMobileNavbar)
           }
-          tabIndex={0}
         >
           Kontakt
-        </a>
+        </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

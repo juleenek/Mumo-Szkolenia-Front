@@ -14,8 +14,7 @@ const QuotationMark: FC<Props> = ({ direction, color }) => {
       xmlns='http://www.w3.org/2000/svg'
       width='63'
       height='54'
-      viewBox='0 0 63 54'
-      role='img'
+      viewBox='0 0 63 54' 
     >
       <path
         opacity='0.539615'

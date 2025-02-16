@@ -12,12 +12,12 @@ import { durationConsts } from '../../../models/constants/style.constant';
 const ABOUT_IMAGES = [
   {
     src: '/src/assets/images/about_img-1.jpg',
-    alt: 'A woman holding a boston terrier dog.',
+    alt: 'Aleksandra trzymająca na kolanach psa',
   },
-  { src: '/src/assets/images/about_img-2.jpg', alt: 'A boston terrier dog' },
+  { src: '/src/assets/images/about_img-2.jpg', alt: 'Mały skupiony pies patrzący w prawo' },
   {
     src: '/src/assets/images/about_img-3.jpg',
-    alt: 'A group of dog owners with their puppies',
+    alt: 'Grupa właścicieli i ich psów w trakcie treningu na miejskim placu',
   },
 ];
 
@@ -34,15 +34,16 @@ const AboutSection: FC = () => {
               triggerOnce={true}
             >
               <p className='about__content-paragraph'>
-                Nazywam się Aleksandra Korczyk, szkoleniem psów metodą naturalną
-                zajmuje się od 2010 roku, przez moje ręce przewinęło się już
+                Nazywam się Aleksandra Linek, szkoleniem psów metodą naturalną
+                zajmuję się od 2010 roku, przez moje ręce przewinęło się już
                 dziesiątki psów wielu ras i z różnymi problemami.
               </p>
               <p className='about__content-paragraph'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                ultricies odio quis euismod blandit. Vestibulum a luctus metus.{' '}
+                Od lat zgłębiam techniki szkoleniowe oparte na pozytywnym
+                wzmocnieniu. Kluczowe jest dla mnie budowanie więzi opartej na
+                zaufaniu i zrozumieniu.
                 <br /> <br /> Prywatnie jestem hodowcą i właścicielem 7 psów
-                rasy Boston Terrier, nie jednego z nich będziecie mieli okazje
+                rasy Boston Terrier, nie jednego z nich będziecie mieli okazję
                 poznać na zajęciach.
               </p>
             </Fade>

@@ -3,7 +3,7 @@
 $dark-gray: map.get($colors, dark-gray);
 $text-shadow: map.get($colors, text-shadow);
 $media-card-image-size: 6.5em;
-$card-image-size: 8em;
+$card-image-size: 7em;
 
 .client-card {
   display: flex;
@@ -17,7 +17,7 @@ $card-image-size: 8em;
   box-shadow:
     rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  padding: 5em 1em 3em 1em;
+  padding: 3em 1em 3em 1em;
   margin: 2.5em 0;
 }
 .client-card__quote {
@@ -31,6 +31,7 @@ $card-image-size: 8em;
   text-align: left;
   line-height: 2em;
   font-weight: 300;
+
 }
 .quotation-mark__up {
   align-self: flex-start;
@@ -46,7 +47,7 @@ $card-image-size: 8em;
   object-fit: cover;
   width: $card-image-size;
   height: $card-image-size;
-  border-radius: $card-image-size;
+  border-radius: 50%;
 }
 
 .client-card__name {
@@ -55,10 +56,10 @@ $card-image-size: 8em;
 }
 @media screen and (max-width: 1000px) {
   .client-card {
-    height: 80%;
+    height: 100%;
   }
   .client-card__quote {
-    height: 10em;
+    height: 100%;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -73,7 +74,7 @@ $card-image-size: 8em;
 @media screen and (max-width: 1300px) {
   .client-card {
     width: 80%;
-    padding: 2em 1em 2em 1em;
+  
   }
   .client-card__content {
     line-height: 1.5em;

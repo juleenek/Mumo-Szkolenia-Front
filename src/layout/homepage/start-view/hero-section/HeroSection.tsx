@@ -39,7 +39,7 @@ const HeroSection: FC = () => {
           <img
             className='hero-section__image'
             src='src/assets/images/hero_dog.png'
-            alt='Picture of dog'
+            alt=''
             onLoad={() => setImageLoaded(true)}
             style={imageLoaded ? {} : { display: 'none' }}
             draggable='false'

@@ -5,40 +5,27 @@
 .navbar {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .navbar__element-link {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
+  background-color: #ffffff;
   color: #000000;
   position: relative;
   opacity: 0.75;
   text-wrap: nowrap;
+  border-radius: 0;
 }
 
 .navbar__element-link:hover {
   opacity: 1;
+  font-weight: 400;
+  border: 1px white solid;
+  border-bottom: 3px map-get($colors, header-blue) solid;
   color: #000000;
-}
-
-.navbar__element-link::before {
-  transition: 300ms;
-  height: 5px;
-  content: '';
-  position: absolute;
-  background-color: map-get($colors, header-blue);
-}
-
-.navbar__element-link::before {
-  height: 0%;
-  width: 100%;
-  bottom: -15px;
-}
-
-.navbar__element-link:hover::before {
-  height: 3px;
 }
 
 @media screen and (max-width: 755px) {

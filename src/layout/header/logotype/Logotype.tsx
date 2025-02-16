@@ -8,7 +8,7 @@ interface Props {
   isSecondNameVisible?: boolean;
 }
 
-const LOGO_SRC = '/src/assets/images/logo-bg-01.png';
+const LOGO_SRC = '/Mumo-Szkolenia-Front/src/assets/images/logo-bg-01.png';
 
 const Logotype: FC<Props> = ({
   className,
@@ -20,7 +20,7 @@ const Logotype: FC<Props> = ({
       <img
         className='logotype__img'
         src={LOGO_SRC}
-        alt='Logo "Mumo - pozytywne szkolenie psów", przedstawiające czarno-białego psa z kokardą i okularami'
+        alt='Logo Mumo, pies z kokardą i okularami'
         draggable='false'
       />
       <div
@@ -29,22 +29,22 @@ const Logotype: FC<Props> = ({
           !isFirstNameVisible && 'invisible'
         )}
       >
-        <p
+        <h1
           className={classNames(
             'logotype__name-child',
             !isFirstNameVisible && 'invisible'
           )}
         >
           Mumo
-        </p>
-        <p
+        </h1>
+        <h1
           className={classNames(
             'logotype__name-child',
             !isSecondNameVisible && 'invisible'
           )}
         >
           pozytywne szkolenie psów
-        </p>
+        </h1>
       </div>
     </div>
   );
